@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App del Clima Mejorada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>¿Cómo anda el clima?</h1>
+
+        <div class="input-container">
+            <div class="input-group">
+                <input type="text" id="cityInput" placeholder="Nombre de la ciudad...">
+                <button id="getWeatherBtn">Obtener Clima</button>
+            </div>
+            <!-- Lista de autocompletado - DENTRO del input-group -->
+            <ul id="suggestions"></ul>
+        </div>
+
+        <!-- Mensajes de error -->
+        <div id="errorMessage"></div>
+
+        <!-- Contenedor con la info del clima -->
+        <div id="weatherInfo"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
